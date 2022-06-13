@@ -122,7 +122,8 @@ form {
 
 .cards-container {
   display: flex;
-  justify-content: space-around; }
+  justify-content: space-around;
+ }
   .cards-container .card {
     transition: transform 0.2s ease;
     box-shadow: 0 4px 6px 0 rgba(22, 22, 26, 0.18);
