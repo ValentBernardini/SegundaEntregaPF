@@ -1,3 +1,12 @@
+@mixin inputsForm () {
+    border-radius: 5px;
+    outline: none;
+    border: solid 1px $color-titulo;
+    padding: 5px 10px;
+    margin: 10px auto;
+    width: 250px;
+}
+
 form {
     font-size: 20px;
     border-radius: 7px;
@@ -6,51 +15,48 @@ form {
     padding: 10px;
 
     .Nombre {
+        @extend .Nombre;
         border-radius: 5px;
         outline: none;
-        border: solid 1px #642a73;
+        border: solid 1px $color-titulo;
         padding: 5px 10px;
         margin: 10px auto;
         width: 250px;
+    }
 
-        .Email {
+    .Email {
+        @include inputsForm($color-titulo);
+        background-color:black;
+    }
+
+    .selector {
+        border-radius: 5px;
+        display: block;
+        padding: 5px 10px;
+        margin: 10px auto;
+        margin-right: 200px;
+        width: 250px;
+        height: 34px;
+
+        #areatext {
             border-radius: 5px;
-            outline: none;
-            border: solid 1px #642a73;
-            padding: 5px 10px;
-            margin: 10px auto;
-            width: 250px;
 
-            .selector {
-                border-radius: 5px;
-                display: block;
-                padding: 5px 10px;
-                margin: 10px auto;
-                margin-right: 200px;
-                width: 250px;
-                height: 34px;
+            .enviar {
+                background-color: darkgray;
+                display: inline-block;
+                border-radius: 10%;
+                border: none;
+                outline: none;
+                width: 80px;
 
-                #areatext {
-                    border-radius: 5px;
+                .restablecer {
+                    background-color: darkgrey;
+                    display: inline-block;
+                    border-radius: 10%;
+                    border: none;
+                    outline: none;
+                    width: 150px;
 
-                    .enviar {
-                        background-color: darkgray;
-                        display: inline-block;
-                        border-radius: 10%;
-                        border: none;
-                        outline: none;
-                        width: 80px;
-
-                        .restablecer {
-                            background-color: darkgrey;
-                            display: inline-block;
-                            border-radius: 10%;
-                            border: none;
-                            outline: none;
-                            width: 150px;
-
-                        }
-                    }
                 }
             }
         }

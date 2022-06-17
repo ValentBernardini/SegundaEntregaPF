@@ -88,50 +88,51 @@ form {
     padding: 5px 10px;
     margin: 10px auto;
     width: 250px; }
-    form .Nombre .Email {
-      border-radius: 5px;
-      outline: none;
-      border: solid 1px #642a73;
-      padding: 5px 10px;
-      margin: 10px auto;
-      width: 250px; }
-      form .Nombre .Email .selector {
-        border-radius: 5px;
-        display: block;
-        padding: 5px 10px;
-        margin: 10px auto;
-        margin-right: 200px;
-        width: 250px;
-        height: 34px; }
-        form .Nombre .Email .selector #areatext {
-          border-radius: 5px; }
-          form .Nombre .Email .selector #areatext .enviar {
-            background-color: darkgray;
-            display: inline-block;
-            border-radius: 10%;
-            border: none;
-            outline: none;
-            width: 80px; }
-            form .Nombre .Email .selector #areatext .enviar .restablecer {
-              background-color: darkgrey;
-              display: inline-block;
-              border-radius: 10%;
-              border: none;
-              outline: none;
-              width: 150px; }
+  form .Email {
+    border-radius: 5px;
+    outline: none;
+    border: solid 1px #642a73;
+    padding: 5px 10px;
+    margin: 10px auto;
+    width: 250px; }
+  form .selector {
+    border-radius: 5px;
+    display: block;
+    padding: 5px 10px;
+    margin: 10px auto;
+    margin-right: 200px;
+    width: 250px;
+    height: 34px; }
+    form .selector #areatext {
+      border-radius: 5px; }
+      form .selector #areatext .enviar {
+        background-color: darkgray;
+        display: inline-block;
+        border-radius: 10%;
+        border: none;
+        outline: none;
+        width: 80px; }
+        form .selector #areatext .enviar .restablecer {
+          background-color: darkgrey;
+          display: inline-block;
+          border-radius: 10%;
+          border: none;
+          outline: none;
+          width: 150px; }
 
 .cards-container {
   display: flex;
-  justify-content: space-around;
- }
-  .cards-container .card {
-    transition: transform 0.2s ease;
-    box-shadow: 0 4px 6px 0 rgba(22, 22, 26, 0.18);
-    border-radius: 0;
-    border: 0;
-    margin-bottom: 1.5em; }
-    .cards-container .card .card:hover {
-      transform: scale(1.1); }
+  justify-content: space-around; }
+
+.card {
+  transition: transform 0.2s ease;
+  box-shadow: 0 4px 6px 0 rgba(22, 22, 26, 0.18);
+  border-radius: 0;
+  border: 0;
+  margin-bottom: 1.5em; }
+
+.card:hover {
+  transform: scale(1.1); }
 
 .contenido-img-p {
   text-align: center;
@@ -183,7 +184,7 @@ form {
     background-color: #414141;
     width: 49%;
     height: 120px;
-    border-radius: 8pxcon; }
+    border-radius: 8px; }
 
 .contenedor-footer {
   display: flex;
